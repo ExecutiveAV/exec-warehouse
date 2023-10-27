@@ -1,0 +1,50 @@
+.mainHeader {
+  display: flex;
+  flex-direction: column;
+  height: 8%;
+  margin-bottom: 42px;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: min-content;
+  margin: 30px auto 0;
+}
+
+.logoTitle {
+  width: fit-content;
+  margin: 0;
+  font-size: 48px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.initial {
+  opacity: 1;
+}
+
+.logoUnderline {
+  width: 100%;
+  border: none;
+  border-top: 3px solid;
+  height: 0;
+}
+
+.mainNav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 105px;
+  margin-top: 32px;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.navLink {
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
