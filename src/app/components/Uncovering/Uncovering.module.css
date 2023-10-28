@@ -6,7 +6,7 @@
 }
 
 .header {
-    height: 273px;
+    height: 145px;
     width: 100%;
     display: flex;
 }
@@ -28,9 +28,32 @@
     display: flex;
 }
 
-.contentText {
+.contentContainer {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.contentTextContainer {
     margin: auto auto auto 0;
     background-color: #3d594243;
-    position: absolute;
-    top: 50;
+    font-size: 30px;
+    height: 512px;
+    width: 60%;
+    max-height: 70%;
+    display: inline-flex;
+}
+
+.contentText {
+    margin: auto auto auto 30px;
+    color: white;
+    width: 1000px;
+}
+
+.contentBackgroundImage {
+    background: lightgray -3.25px -158.857px / 100% 177.956% no-repeat;
+    background-size: cover;
+    width: 100%;
+    filter: opacity(0.75);
 }

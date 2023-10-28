@@ -1,3 +1,8 @@
 .main {
     height: 100%;
 }
+
+.mainBumper {
+    border: none;
+    border-top: 22px solid #797773;
+}
