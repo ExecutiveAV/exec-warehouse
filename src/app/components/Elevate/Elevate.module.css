@@ -1,0 +1,51 @@
+.elevate {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.elevateBackgroundImageContainer {
+    max-height: 1003px;
+    width: 1003px;
+    margin: 0px 67px 0px 0px;
+    overflow: hidden;
+}
+
+.elevateBackgroundImage {
+    object-fit: cover;
+    width: 100%;
+    margin: 0;
+}
+
+.elevateLine {
+    border: 0;
+    border-left: 2px solid;
+}
+
+.elevateContent {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 70px;
+}
+
+.elevateContentTitle {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 90px;
+}
+
+.elevateContentTitleBold {
+    font-weight: bold;
+    font-size: 90px;
+}
+
+.elevateContentDescription {
+    width: 677px;
+    font-size: 38px;
+    font-weight: normal;
+    margin-top: 50px;
+}

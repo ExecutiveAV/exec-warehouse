@@ -15,7 +15,7 @@ const Crafting = () => {
             </p>
         </header>
         <section className={styles.craftingImageContainer}>
-            <Image src={craftingBackground} alt="Image of photography used as a background" className={styles.craftingImage} />
+            <Image src={craftingBackground} alt="Image of photography used as a background" className={styles.craftingImage} style={{backgroundPositionY: "50px"}} />
         </section>
     </section>
   );

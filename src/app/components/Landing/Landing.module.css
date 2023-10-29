@@ -19,7 +19,6 @@
 }
 
 .cards {
-    margin: 0 auto 0;
     display: grid;
     height: 180px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -27,13 +26,15 @@
     padding: 18px 50px 0;
     position: absolute;
     bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .card {
     display: flex;
     text-align: center;
     flex-direction: column;
-    background-color: #3D5942;
+    background-color: var(--green-hex);
     height: 179px;
     width: 417px;
     position: relative;

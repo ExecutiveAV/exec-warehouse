@@ -5,6 +5,8 @@ import Landing from "./components/Landing/Landing";
 import Uncovering from './components/Uncovering/Uncovering';
 import Amplify from './components/Amplify/Amplify';
 import Crafting from './components/Crafting/Crafting';
+import Elevate from './components/Elevate/Elevate';
+import AboutUs from './components/AboutUs/AboutUs';
 
 export default function Home() {
   return (
@@ -16,11 +18,11 @@ export default function Home() {
       <Amplify />
       <hr className={styles.mainBumper} />
       <Crafting />
-      {/* <Elevate />
-      <Bumper />
+      <Elevate />
+      <hr className={styles.mainBumper} />
       <AboutUs />
-      <ContactUs />
-      <Bumper /> */}
+      {/* <ContactUs /> */}
+      <hr className={styles.mainBumper} />
     </main>
   );
 };

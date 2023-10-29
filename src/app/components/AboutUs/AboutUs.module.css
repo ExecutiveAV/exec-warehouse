@@ -1,0 +1,65 @@
+.aboutUs {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUsHeader {
+    height: 178px;
+    min-height: 178px;
+    width: 100%;
+    display: flex;
+    background-color: var(--green-hex);
+}
+
+.aboutUsHeaderTitle {
+    font-size: 90px;
+    font-weight: 300;
+    font-style: italic;
+    margin: auto 30px auto auto;
+    color: white;
+}
+
+.aboutUsBody {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.aboutUsBodyContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 150px 60px 0;
+    height: 100%;
+}
+
+.aboutUsBodyContentText {
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.aboutUsBodyContentTextBold {
+    font-size: 70px;
+    margin-top: 40px;
+    width: 100%;
+    text-align: right;
+}
+
+.aboutUsBodyImageContainer {
+    flex: 1;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+
+.aboutUsBodyImage {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0px;
+}

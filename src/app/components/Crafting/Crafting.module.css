@@ -1,5 +1,5 @@
 .crafting {
-    height: 1080px;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -35,9 +35,12 @@
 
 .craftingImageContainer {
     height: 713px;
+    position: relative;
+    overflow: hidden;
 }
 
 .craftingImage { 
     width: 100%;
-    height: 100%;
+    position: absolute;
+    top: -200px;
 }
