@@ -7,6 +7,7 @@ import Amplify from './components/Amplify/Amplify';
 import Crafting from './components/Crafting/Crafting';
 import Elevate from './components/Elevate/Elevate';
 import AboutUs from './components/AboutUs/AboutUs';
+import ContactUs from './components/ContactUs/ContactUs';
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
       <Elevate />
       <hr className={styles.mainBumper} />
       <AboutUs />
-      {/* <ContactUs /> */}
+      <ContactUs />
       <hr className={styles.mainBumper} />
     </main>
   );
