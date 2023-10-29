@@ -5,9 +5,7 @@ const Header = () => {
   return (
     <header className={styles.mainHeader}>
       <section className={styles.logoContainer}>
-        <h1 className={styles.logoTitle}>
-            <span className={styles.logoTitleBold}>Exec Warehouse</span>
-        </h1>
+        <h1 className={styles.logoTitle}>Exec Warehouse</h1>
         <hr className={styles.logoUnderline} />
       </section>
       <nav className={styles.mainNav}>

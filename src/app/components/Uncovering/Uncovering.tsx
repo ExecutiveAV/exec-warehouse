@@ -1,7 +1,7 @@
 import styles from './Uncovering.module.css';
 import Image from 'next/image';
 
-import uncoveringHero from '@/assets/imgs/uncoveringHero.png';
+import uncoveringHero from '@/assets/imgs/uncoveringBackground.png';
 
 import { loraFont } from '@/app/fonts';
 

@@ -3,6 +3,8 @@ import styles from './main.module.css';
 import Header from "./components/Header/Header";
 import Landing from "./components/Landing/Landing";
 import Uncovering from './components/Uncovering/Uncovering';
+import Amplify from './components/Amplify/Amplify';
+import Crafting from './components/Crafting/Crafting';
 
 export default function Home() {
   return (
@@ -11,10 +13,10 @@ export default function Home() {
       <Landing />
       <hr className={styles.mainBumper} />
       <Uncovering />
-      {/* <Amplyfy />
-      <Bumper />
+      <Amplify />
+      <hr className={styles.mainBumper} />
       <Crafting />
-      <Elevate />
+      {/* <Elevate />
       <Bumper />
       <AboutUs />
       <ContactUs />

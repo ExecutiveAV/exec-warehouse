@@ -41,14 +41,6 @@ export const marcellusFont = localFont({ src: [
     }
 ] });
 
-export const malayalamFont = localFont({ src: [
-    {
-        path: '../assets/fonts/malayalam-mn.ttf',
-        weight: '400',
-        style: 'normal',
-    },
-] });
-
 export const permanentMarkerFont = localFont({ src: [
     {
         path: '../assets/fonts/permanent-marker.ttf',
