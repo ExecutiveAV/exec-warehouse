@@ -12,8 +12,7 @@
 }
 
 .hero {
-    max-height: 550px;
-    height: 726px;
+    height: 550px;
     width: 100%;
     object-fit: cover;
 }
@@ -76,4 +75,24 @@
 .footerTextBold {
     font-weight: bold;
     line-height: normal;
+}
+
+@media screen and (min-width: 2500px) {
+    .landing {
+        height: calc(100vh - 235px);
+    }
+
+    .hero {
+        height: 1000px;
+    }
+
+    .cards {
+        bottom: 0px;
+        height: 155px;
+        min-width: 1775px;
+    }
+    
+    .card {
+        height: 155px;
+    }
 }
