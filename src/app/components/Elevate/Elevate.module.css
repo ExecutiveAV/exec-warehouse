@@ -52,19 +52,22 @@
 
 @media screen and (min-width: 2500px) {
     .elevateBackgroundImageContainer {
-        min-width: 1387px;
-        min-height: 1323px;
+        min-width: 1187px;
+        min-height: 1123px;
         margin: auto 72px auto 0;
+        overflow: hidden;
+        position: relative;
     }
 
     .elevateBackgroundImage {
-        width: 1387px;
-        height: 1323px;
+        width: 1187px;
+        height: 1123px;
     }
 
     .elevateContent {
         width: 1100px;
-        padding-top: 120px;
+        padding-top: 80px;
+        margin: 0 auto;
     }
 
     .elevateContentTitle {
@@ -74,6 +77,6 @@
     .elevateContentDescription {
         font-size: 50px;
         min-width: 828px;
-        margin-top: 120px;
+        margin-top: 80px;
     }
 }
