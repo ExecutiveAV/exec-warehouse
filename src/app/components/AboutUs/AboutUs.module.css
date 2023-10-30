@@ -63,3 +63,48 @@
     position: absolute;
     bottom: 0px;
 }
+
+@media screen and (min-width: 2500px) {
+    .aboutUsHeader {
+        min-height: 178px;
+    }
+    .aboutUsBody {
+        width: 100%;
+    }
+
+    .aboutUsBodyContent {
+        max-width: 50%;
+        width: 50%;
+        border: solid 5px;
+        padding: 163px 157px 0;
+    }
+
+    .aboutUsBodyContent > .aboutUsBodyContentText, .aboutUsBodyContentTextBold {
+
+        max-width: 942px;
+    }
+
+    .aboutUsHeaderTitle {
+        font-size: 100px;
+    }
+
+    .aboutUsBodyContentText {
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+    .aboutUsBodyContentTextBold {
+        font-size: 70px;
+    }
+
+    .aboutUsBodyImageContainer {
+
+    }
+
+    .aboutUsBodyImage {
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        
+    }
+}

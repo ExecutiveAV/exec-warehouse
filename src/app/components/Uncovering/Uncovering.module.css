@@ -63,3 +63,28 @@
 .uncoveringContentHeaderTitleBold {
     font-size: 90px;
 }
+
+@media screen and (min-width: 2500px) {
+
+    .uncoveringContentContainer {
+        width: 1484px;
+        height: 647px;
+    }
+
+    .uncoveringContentHeader {
+        height: 194px;
+    }
+
+    .uncoveringContentHeaderTitle {
+        font-size: 75px;
+    }
+
+    .uncoveringContentHeaderTitleBold {
+        font-size: 100px;
+    }
+
+    .uncoveringContentText {
+        font-size: 50px;
+    }
+
+}

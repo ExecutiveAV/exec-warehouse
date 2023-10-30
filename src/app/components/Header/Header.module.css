@@ -39,6 +39,11 @@
 .navLink {
   font-size: 32px;
   text-decoration: none;
-  text-transform: uppercase;
   color: black;
+}
+
+@media screen and (min-width: 2500px) {
+  .mainHeader {
+      height: 235px;
+  }
 }

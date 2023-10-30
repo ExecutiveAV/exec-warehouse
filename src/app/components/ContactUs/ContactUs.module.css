@@ -151,3 +151,71 @@
     right: 50%;
     transform: translateX(50%);
 }
+
+@media screen and (min-width: 2500px) {
+    .contactUsHeader {
+        height: 194px;
+    }
+
+    .contactUsHeaderTitle {
+        font-size: 100px;
+    }
+
+    .contactUsBodyImageContainer {
+        height: 100%;
+    }
+
+    .contactUsBodyImage {
+        width: 100%;
+        min-height: 100%;
+    }
+
+    .contactUsBodyFormContainer {
+        height: 1100px;
+        width: 980px;
+    }
+
+    .contactUsBodyRibbon {
+        border-left: 491px solid transparent;
+        border-right: 491px solid transparent;
+        bottom: -99px;
+    }
+    .contactUsBodyFormTitle {
+        font-size: 50px;
+    }
+
+    .contactUsBodyFormLabelContainer {
+    }
+
+    .contactUsBodyFormLabel {
+        font-size: 30px;
+    }
+
+    .contactUsBodyFormInput {
+        font-size: 30px;
+    }
+
+    .previousSellerLabel {
+        font-size: 30px;
+    }
+
+    .contactUsBodyFormPreviousSellerLabelSquare {
+        width: 38px;
+        height: 42px;
+    }
+
+    .contactUsBodyFormPreviousSellerLabel {
+        font-size: 25px;
+    }
+
+    .contactUsBodyFormMessage {
+        height: 280px;
+        border: solid 2px black;
+    }
+
+    .contactUsBodyFormButton {
+        height: 70px;
+        width: 180px;
+        font-size: 35px;
+    }
+}
