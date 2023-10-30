@@ -1,45 +1,66 @@
-.mainHeader {
-  display: flex;
-  flex-direction: column;
-  height: 208px;
+@media screen and (min-width:400px) {
+  .mainHeader {
+    height: 108px;
+    display: flex;
+    width: 100%;
+    border: solid;
+    flex-direction: column;
+  }
+
+  .logoContainer {
+    margin: auto;
+  }
+
+  .mainNav {
+    display: none;
+  }
 }
 
-.logoContainer {
-  display: flex;
-  flex-direction: column;
-  height: min-content;
-  margin: 40px auto 0;
-}
+@media screen and (min-width: 1900px) {
+    
+  .mainHeader {
+    display: flex;
+    flex-direction: column;
+    height: 208px;
+  }
 
-.logoTitle {
-  margin: 0;
-  font-size: 80px;
-  text-transform: uppercase;
-  white-space: nowrap;
-  padding: 0px 30px;
-  height: min-content;
-  line-height: 0.8;
-}
+  .logoContainer {
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    margin: 40px auto 0;
+  }
 
-.logoUnderline {
-  width: 100%;
-  border: none;
-  border-top: 3px solid;
-  height: 0;
-  margin: 20px 0 24px;
-}
+  .logoTitle {
+    margin: 0;
+    font-size: 80px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0px 30px;
+    height: min-content;
+    line-height: 0.8;
+  }
 
-.mainNav {
-  display: flex;
-  justify-content: space-between;
-  width: 872px;
-  margin: 0 auto;
-}
+  .logoUnderline {
+    width: 100%;
+    border: none;
+    border-top: 3px solid;
+    height: 0;
+    margin: 20px 0 24px;
+  }
 
-.navLink {
-  font-size: 32px;
-  text-decoration: none;
-  color: black;
+  .mainNav {
+    display: flex;
+    justify-content: space-between;
+    width: 872px;
+    margin: 0 auto;
+  }
+
+  .navLink {
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+  }
 }
 
 @media screen and (min-width: 2500px) {

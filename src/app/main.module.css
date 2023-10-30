@@ -1,14 +1,25 @@
 .main {
     width: 100%;
-    max-width: 1920px;
     margin: 0 auto;
     height: 100%;
+    border: red solid 1px;
+    overflow-x: hidden;
 }
 
-.mainBumper {
-    border: none;
-    border-top: 15px solid #797773;
-    margin: 0;
+@media screen and (min-width: 1900px) {
+
+    .main {
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .mainBumper {
+        border: none;
+        border-top: 15px solid #797773;
+        margin: 0;
+    }
 }
 
 @media  screen and (min-width: 2500px) {
