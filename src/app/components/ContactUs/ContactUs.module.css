@@ -91,6 +91,7 @@
 .contactUsBodyFormInput {
     border: none;
     border-bottom: 2px solid black;
+    height: 22px;
 }
 
 .contactUsBodyFormPreviousSellerContainer {
@@ -120,7 +121,7 @@
 }
 
 .contactUsBodyFormPreviousSellerInput:checked + .contactUsBodyFormPreviousSellerLabelSquare {
-    background-color: #000;
+    background-color: #a4a4a4;
 }
 
 .contactUsBodyFormMessage {

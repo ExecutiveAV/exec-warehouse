@@ -8,21 +8,20 @@ import { loraFont } from '@/app/fonts';
 const Uncovering = () => {
     return (
         <section className={styles.uncovering}>
-            <header className={styles.header}>
-                <h2 className={`${loraFont.className} ${styles.headerText}`} >
-                    <span className={styles.headerTextBold} >UNCOVERING</span> Hidden Challenges
-                </h2>
-            </header>
-            <section className={styles.content}>
-                <Image src={uncoveringHero} className={styles.contentBackgroundImage} alt="Image of a person using a laptop's keyboard used as a background" />
-                <div className={styles.contentContainer}>
-                    <div className={styles.contentTextContainer} >
-                        <p className={styles.contentText}>
-                            {"Step into a new realm of optimization for your Amazon listings. At first glance, everything might seem in order, but what lies beneath? Our meticulous analysis dives deep, surfacing those elusive issues - from overlooked keywords to visuals that don't quite hit the mark. These aren't just challenges; they're untapped opportunities waiting to be harnessed. Concurrently, we design optimized storefronts that not only captivate your loyal customers but also foster brand allegiance, encouraging them to explore more of what you offer. Partner with us and unlock the full potential of your brand, ensuring you not only compete but lead in the marketplace."}
-                        </p>
-                    </div>
+            <Image src={uncoveringHero} className={styles.uncoveringBackgroundImage} alt="Image of a person using a laptop's keyboard used as a background" />
+            <div className={styles.uncoveringContentContainer}>
+                
+                <header className={styles.uncoveringContentHeader}>
+                    <h2 className={`${loraFont.className} ${styles.uncoveringContentHeaderTitle}`} >
+                        <span className={styles.uncoveringContentHeaderTitleBold} >UNCOVERING</span> Hidden Challenges
+                    </h2>
+                </header>
+                <div className={styles.uncoveringContentTextContainer} >
+                    <p className={styles.uncoveringContentText}>
+                        {"Explore a new level of Amazon listing optimization. While things may appear fine, our thorough analysis reveals hidden challenges—from missed keywords to off-target visuals. Turn these challenges into opportunities. We craft captivating storefronts that boost customer loyalty and drive exploration. Partner with us to lead in the marketplace."}
+                    </p>
                 </div>
-            </section>
+            </div>
         </section>
     );
 };
