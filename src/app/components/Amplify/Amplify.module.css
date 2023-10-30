@@ -43,6 +43,7 @@
     .amplifyContent {
         min-width: 900px;
         margin: 185px 0 auto;
+        padding-top: 0;
     }
 
     .amplifyImageContainer {
