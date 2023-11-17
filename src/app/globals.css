@@ -18,5 +18,8 @@ body * {
 }
 
 :root {
+  --primary-color: #3D5942;
   --green-hex: #3D5942;
+  --secondary-color: #EDFFED;
+  --header-height: 108px;
 }
