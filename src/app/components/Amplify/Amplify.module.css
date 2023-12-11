@@ -1,4 +1,47 @@
+.amplify {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
 
+.amplifyContent {
+    width: 100%;
+    max-height: 50%;
+    padding: 37px 32px 15px;
+    font-size: 18px;
+    flex: 1;
+}
+
+.amplifyContentTitle {
+    margin-bottom: 26px;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.amplifyContentTitleBold {
+    font-size: 28px;
+}
+
+.amplifyImageContainer {
+    min-height: 426px;
+    flex: 1;
+    position: relative;
+    background-color: #e0e0e0;
+    max-height: 426px;
+}
+
+.amplifyImage {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 

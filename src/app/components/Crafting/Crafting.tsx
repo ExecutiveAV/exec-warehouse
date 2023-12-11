@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { loraFont } from '@/app/fonts';
 
 import craftingBackground from '@/assets/imgs/craftingBackground.png';
+import craftingBackgroundM from '@/assets/imgs/craftingBackgroundM.png';
 
 const Crafting = () => {
   return (
@@ -16,6 +17,7 @@ const Crafting = () => {
         </header>
         <section className={styles.craftingImageContainer}>
             <Image src={craftingBackground} alt="Image of photography used as a background" className={styles.craftingImage} style={{backgroundPositionY: "50px"}} />
+            <Image src={craftingBackgroundM} alt="Image of photography used as a background for mobile phones or landscapes displays" className={styles.craftingImageLandscape} style={{backgroundPositionY: "50px"}} />
         </section>
     </section>
   );
