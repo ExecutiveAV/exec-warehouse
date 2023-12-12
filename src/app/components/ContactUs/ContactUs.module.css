@@ -1,155 +1,159 @@
 .contactUs {
     height: 100vh;
-    width: 100%;
+    height: calc(100vh - var(--header-height));
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     position: relative;
 }
 
 .contactUsHeader {
-    height: 197px;
-    min-height: 197px;
-    width: 100%;
-    display: flex;
+    min-height: 75px;
+    max-height: 75px;
     background-color: black;
+    text-align: center;
+    display: flex;
 }
 
 .contactUsHeaderTitle {
-    font-size: 90px;
-    margin: auto auto auto 230px;
+    font-size: 28px;
     color: white;
+    margin: auto;
 }
 
-.contactUsBody {
-    height: 100%;
-    overflow: hidden;
+.contactUsImageContainer {
+    flex: 1;
 }
 
-.contactUsBodyImageContainer {
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.contactUsBodyImage {
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    bottom: 0;
-}
-
-.contactUsBodyFormContainer {
-    position: absolute;
-    top: 0;
-    right: 100px;
-    height: 780px;
-    background-color: white;
-    width: 840px;
-    margin: 0;
-    padding: 0 54px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contactUsBodyForm {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.contactUsBodyFormTitle {
-    margin: 0 auto;
-    display: inline-block;
-    margin-top: 36px;
-    font-size: 40px;
-}
-
-.contactUsBodyFormNameContainer {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    margin-top: 60px;
-    margin-bottom: 30px;
-}
-
-.contactUsBodyFormLabelContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.contactUsBodyFormLabel {
-    margin-top: 10px;
-}
-
-.previousSellerLabel {
-    margin-top: 35px;
-}
-
-.contactUsBodyFormInput {
-    border: none;
-    border-bottom: 2px solid black;
-    height: 22px;
-}
-
-.contactUsBodyFormPreviousSellerContainer {
-    width: 100%;
-    display: flex;
-    margin-bottom: 40px;
-}
-
-.contactUsBodyFormPreviousSellerLabel {
-    margin-right: 90px;
-    margin-left: 20px;
-    cursor: pointer;
-}
-
-.contactUsBodyFormPreviousSellerLabelSquare {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    border: 2px solid #000;
-    cursor: pointer;
-    padding-left: 20px;
-}
-
-.contactUsBodyFormPreviousSellerInput {
+.contactUsImage {
     display: none;
 }
 
-.contactUsBodyFormPreviousSellerInput:checked + .contactUsBodyFormPreviousSellerLabelSquare {
-    background-color: #a4a4a4;
-}
-
-.contactUsBodyFormMessage {
+.contactUsImageM {
+    display: block;
     width: 100%;
-    height: 207px;
-    margin-top: 16px;
+    height: 100%;
 }
 
-.contactUsBodyFormButton {
-    height: 50px;
-    width: 150px;
+.contactUsFormContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    background-color: white;
+    width: 328px;
+    height: 495px;
+    padding: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contactUsForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactUsFormTitle {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0 auto 13px;
+} 
+
+.contactUsFormNameContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 56px;
+}
+
+.contactUsFormLabelContainer {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactUsFormInput {
+    border: none;
+    border-bottom: solid 1px black;
+    margin-bottom: 13px;
+    font-size: 12px;
+}
+
+.contactUsFormLabel {
+    font-size: 12px;
+}
+
+.previousSellerLabel {
+    margin-top: 24px;
+}
+
+.contactUsFormPreviousSellerContainer {
+    display: grid;
+    width: 200px;
+    max-width: 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 70px;
+    margin-bottom: 25px;
+}
+
+.contactUsFormPreviousSellerInput {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.contactUsFormPreviousSellerLabelSquare {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.contactUsFormPreviousSellerInput:checked + .contactUsFormPreviousSellerLabelSquare {
+    background-color: #858585;
+    border: solid 1px black;
+}
+
+.contactUsFormMessage {
+    border: none;
+    border-radius: 0;
+    width: 276px;
+    height: 138px;
+    margin-top: 25px;
+    margin-bottom: 22px;
+    border: solid 1px black;
+
+}
+
+.contactUsFormButton {
+    border: none;
     margin-left: auto;
-    margin-top: 40px;
-    background-color: #000;
-    color: #fff;
-    font-size: 30px;
+    width: 70px;
+    height: 28px;
+    color: white;
+    background-color: black;
+    font-size: 14px;
+
 }
 
-.contactUsBodyRibbon {
+.contactUsFormButton:active {
+    background-color: #858585;
+}
+
+.contactUsRibbon {
     width: 0;
     height: 0;
-    border-left: 420px solid transparent;
-    border-right: 420px solid transparent;
-    border-top: 100px solid #FFFFFF;
+    border-left: 164px solid transparent;
+    border-right: 164px solid transparent;
+    border-top: 70px solid #ffffff;
     position: absolute;
-    bottom: -100px;
-    right: 50%;
-    transform: translateX(50%);
+    bottom: 0;
+    left: 0;
+    transform: translateY(99.5%);
 }
 
 @media screen and (min-width: 2500px) {

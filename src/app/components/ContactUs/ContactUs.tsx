@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { loraFont, permanentMarkerFont } from '@/app/fonts';
 
 import ContactUsBackground from '@/assets/imgs/contactUsBackground.png';
+import ContactUsBackgroundM from '@/assets/imgs/contactUsBackgroundM.png';
 
 const ContactUs = () => {
     return (
@@ -11,44 +12,47 @@ const ContactUs = () => {
             <section className={styles.contactUsHeader}>
                 <h2 className={`${styles.contactUsHeaderTitle} ${permanentMarkerFont.className}`}>CONTACT US</h2>
             </section>
-            <section className={styles.contactUsBody}>
-                <section className={styles.contactUsBodyImageContainer}>
-                    <Image src={ContactUsBackground} alt="Contact Us Background" className={styles.contactUsBodyImage} />
-                </section>
-                <section className={styles.contactUsBodyFormContainer} >
-                    <form className={styles.contactUsBodyForm} >
-                        <h3 className={`${styles.contactUsBodyFormTitle} `} >{"Interested in working with us? "}</h3>
-                        <section className={styles.contactUsBodyFormNameContainer} >    
-                            <section className={styles.contactUsBodyFormLabelContainer} >    
-                                <input className={styles.contactUsBodyFormInput} type="text" id="firstName" name="firstName" />
-                                <label className={styles.contactUsBodyFormLabel} htmlFor="firstName" >First Name</label>
-                            </section>
-                            <section className={styles.contactUsBodyFormLabelContainer} >    
-                                <input className={styles.contactUsBodyFormInput} type="text" id="lastName" name="lastName" />
-                                <label className={styles.contactUsBodyFormLabel} htmlFor="lastName" >Last Name</label>
-                            </section>
+            <section className={styles.contactUsImageContainer}>
+                <Image src={ContactUsBackground} alt="Contact Us Background" className={styles.contactUsImage} />
+                <Image src={ContactUsBackgroundM} alt="Contact Us Background" className={styles.contactUsImageM} />
+            </section>
+            <section className={styles.contactUsFormContainer} >
+                <form className={styles.contactUsForm} >
+
+                    <h3 className={`${styles.contactUsFormTitle} `} >{"Interested in working with us? "}</h3>
+
+                    <section className={styles.contactUsFormNameContainer} >    
+                        <section className={styles.contactUsFormLabelContainer} >    
+                            <input className={styles.contactUsFormInput} type="text" id="firstName" name="firstName" />
+                            <label className={styles.contactUsFormLabel} htmlFor="firstName" >First Name</label>
                         </section>
-                        <input className={styles.contactUsBodyFormInput} type="email" id="email" name="email" />
-                        <label className={styles.contactUsBodyFormLabel} htmlFor="email" >E-mail Address</label>
-                        <label className={`${styles.contactUsBodyFormLabel} ${styles.previousSellerLabel}`} htmlFor="previousSellerContainer" >Are you a previous seller?</label><br />
-                        <section className={styles.contactUsBodyFormPreviousSellerContainer} >
-                            <div className={styles.contactUsBodyFormPreviousSellerInputContainer} >
-                                <input className={styles.contactUsBodyFormPreviousSellerInput} type="radio" id="previousSellerYes" name="previousSeller" value="previousSellerYes" />
-                                <label className={styles.contactUsBodyFormPreviousSellerLabelSquare} htmlFor="previousSellerYes" ></label>
-                                <label className={styles.contactUsBodyFormPreviousSellerLabel} htmlFor="previousSellerYes" >Yes</label>
-                            </div>
-                            <div className={styles.contactUsBodyFormPreviousSellerInputContainer} >
-                                <input className={styles.contactUsBodyFormPreviousSellerInput} type="radio" id="previousSellerNo" name="previousSeller" value="previousSellerNo" />
-                                <label className={styles.contactUsBodyFormPreviousSellerLabelSquare} htmlFor="previousSellerNo" ></label>
-                                <label className={styles.contactUsBodyFormPreviousSellerLabel} htmlFor="previousSellerNo" >No</label>
-                            </div>
+                        <section className={styles.contactUsFormLabelContainer} >    
+                            <input className={styles.contactUsFormInput} type="text" id="lastName" name="lastName" />
+                            <label className={styles.contactUsFormLabel} htmlFor="lastName" >Last Name</label>
                         </section>
-                        <label className={styles.contactUsBodyFormLabel} htmlFor="message" >Message</label>
-                        <textarea className={styles.contactUsBodyFormMessage} id="message" name="message" />
-                        <button className={`${styles.contactUsBodyFormButton} `} type="submit" >Submit</button>
-                    </form>
-                    <div className={styles.contactUsBodyRibbon} />  
-                </section>
+                    </section>
+
+                    <input className={styles.contactUsFormInput} type="email" id="email" name="email" />
+                    <label className={styles.contactUsFormLabel} htmlFor="email" >E-mail Address</label>
+                    
+                    <label className={`${styles.contactUsFormLabel} ${styles.previousSellerLabel}`} htmlFor="previousSellerContainer" >Are you a previous seller?</label><br />
+                    <section className={styles.contactUsFormPreviousSellerContainer} >
+                        <div className={styles.contactUsFormPreviousSellerInputContainer} >
+                            <input className={styles.contactUsFormPreviousSellerInput} type="radio" id="previousSellerYes" name="previousSeller" value="previousSellerYes" />
+                            <label className={styles.contactUsFormPreviousSellerLabelSquare} htmlFor="previousSellerYes" ></label>
+                            <label className={styles.contactUsFormPreviousSellerLabel} htmlFor="previousSellerYes" >Yes</label>
+                        </div>
+                        <div className={styles.contactUsFormPreviousSellerInputContainer} >
+                            <input className={styles.contactUsFormPreviousSellerInput} type="radio" id="previousSellerNo" name="previousSeller" value="previousSellerNo" />
+                            <label className={styles.contactUsFormPreviousSellerLabelSquare} htmlFor="previousSellerNo" ></label>
+                            <label className={styles.contactUsFormPreviousSellerLabel} htmlFor="previousSellerNo" >No</label>
+                        </div>
+                    </section>
+                    <label className={styles.contactUsFormLabel} htmlFor="message" >Message:</label>
+                    <textarea className={styles.contactUsFormMessage} id="message" name="message" />
+                    <button className={`${styles.contactUsFormButton} `} type="submit" >Submit</button>
+                </form>
+                <div className={styles.contactUsRibbon} />  
             </section>
         </section>
     );

@@ -1,69 +1,63 @@
 .aboutUs {
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--secondary-color);
+    height: calc(100vh - var(--header-height));
 }
 
 .aboutUsHeader {
-    height: 178px;
-    min-height: 178px;
-    width: 100%;
-    display: flex;
-    background-color: var(--green-hex);
+    min-height: 52px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 400;
+    text-align: right;
+    font-style: italic;
+    display: inline-flex;
 }
 
 .aboutUsHeaderTitle {
-    font-size: 90px;
-    font-weight: 300;
-    font-style: italic;
-    margin: auto 30px auto auto;
-    color: white;
-}
-
-.aboutUsBody {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.aboutUsBodyContent {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 150px 60px 0;
-    height: 100%;
-}
-
-.aboutUsBodyContentText {
     font-size: 28px;
-    font-weight: bold;
-
+    color: white;
+    font-weight: 400;
+    text-align: right;
+    font-style: italic;
+    margin: auto 22px auto auto;
 }
 
-.aboutUsBodyContentTextBold {
-    font-size: 70px;
-    margin-top: 40px;
-    width: 100%;
+.aboutUsContent {
+    padding: 22px 30px;
+    flex: 1;
+}
+
+.aboutUsBodyContentParagraph {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.aboutUsContentText {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.aboutUsContentTextBold {
+    font-size: 25px;
     text-align: right;
 }
 
-.aboutUsBodyImageContainer {
-    flex: 1;
+.aboutUsImageContainer {
     overflow: hidden;
-    height: 100%;
-    position: relative;
+    max-height: 354px;
 }
 
-.aboutUsBodyImage {
+.aboutUsImage {
+    display: none;
+}
+
+.aboutUsImageM {
+    display: block;
     width: 100%;
-    object-fit: cover;
-    overflow: hidden;
-    position: absolute;
-    bottom: 0px;
 }
-
 @media screen and (min-width: 2500px) {
     .aboutUsHeader {
         min-height: 178px;
