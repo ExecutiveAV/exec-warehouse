@@ -1,5 +1,5 @@
 .mainHeader {
-  height: var(--header-height);
+  height: var(--header-heightMobile);
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -17,29 +17,21 @@
   display: none;
 }
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 650px) {
     
   .mainHeader {
-    display: flex;
-    flex-direction: column;
-    height: 208px;
+    height: var(--header-heightTablet);
   }
 
   .logoContainer {
     display: flex;
     flex-direction: column;
-    height: min-content;
-    margin: 40px auto 0;
   }
 
   .logoTitle {
     margin: 0;
-    font-size: 80px;
+    font-size: 50px;
     text-transform: uppercase;
-    white-space: nowrap;
-    padding: 0px 30px;
-    height: min-content;
-    line-height: 0.8;
   }
 
   .logoUnderline {
@@ -51,10 +43,7 @@
   }
 
   .mainNav {
-    display: flex;
-    justify-content: space-between;
-    width: 872px;
-    margin: 0 auto;
+    display: none;
   }
 
   .navLink {

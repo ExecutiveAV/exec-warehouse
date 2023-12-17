@@ -1,7 +1,7 @@
 .uncovering {
     position: relative;
     width: 100%;
-    height: calc(100vh - var(--header-height));
+    height: calc(100vh - var(--header-heightMobile));
     overflow: hidden;
 }
 
@@ -53,7 +53,7 @@
     position: absolute;
     top: 0;
     flex-direction: column;
-    background-color: var(--green-hex);
+    background-color: var(--primary-color);
     border-radius: 25px;
 }
 
@@ -61,7 +61,7 @@
     height: 129px;
     width: 100%;
     display: flex;
-    background-color: var(--green-hex);
+    background-color: var(--primary-color);
 }
 
 .uncoveringContentHeaderTitle {
@@ -80,27 +80,47 @@
     font-size: 28px;
 }
 
-@media screen and (min-width: 2500px) {
-
-    .uncoveringContentContainer {
-        width: 1484px;
-        height: 647px;
+@media screen and (min-width: 600px) {
+    .uncovering {
+        height: calc(100vh - var(--header-heightTablet));
+        position: relative;
     }
 
     .uncoveringContentHeader {
-        height: 194px;
+        position: absolute;
+        top: 50px;
+        width: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: unset;
     }
 
     .uncoveringContentHeaderTitle {
-        font-size: 75px;
+        height: 100%;
+        border-radius: 25px;
+        background-color: var(--secondary-color);
+        filter: opacity(0.5);
     }
 
     .uncoveringContentHeaderTitleBold {
-        font-size: 100px;
+        font-size: 50px;
+    }
+
+    .uncoveringContentTextContainerBackground {
+        top: -170px;
+        min-width: 600px;
+        width: 600px;
+        max-width: 95%;
+        min-height: 500px;
+        padding: 10px 20px;
+        background-color: var(--primary-color);
+        filter: opacity(0.75);
+        border-radius: 25px;
+
     }
 
     .uncoveringContentText {
-        font-size: 50px;
+        font-size: 30px;
     }
 
 }

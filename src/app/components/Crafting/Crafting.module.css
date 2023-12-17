@@ -1,6 +1,6 @@
 .crafting {
     width: 100%;
-    height: calc(100vh - var(--header-height));
+    height: calc(100vh - var(--header-heightMobile));
     display: flex;
     flex-direction: column;
     margin: 0;

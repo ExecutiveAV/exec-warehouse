@@ -1,6 +1,6 @@
 .contactUs {
     height: 100vh;
-    height: calc(100vh - var(--header-height));
+    height: calc(100vh - var(--header-heightMobile));
     display: flex;
     flex-direction: column;
     overflow: hidden;

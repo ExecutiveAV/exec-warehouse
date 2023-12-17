@@ -7,7 +7,7 @@ import amplifyHero from '@/assets/imgs/amplifyBackground.png';
 
 const Amplify = () => {
     return (
-        <section className={styles.amplify}>
+        <section id='amplify' className={styles.amplify}>
             <section className={`${loraFont.className} ${styles.amplifyContent}`}>
                 <h2 className={styles.amplifyContentTitle}>
                     <span className={styles.amplifyContentTitleBold}>Amplifying</span><br />

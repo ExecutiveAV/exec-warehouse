@@ -1,7 +1,7 @@
 .amplify {
     position: relative;
     width: 100%;
-    height: calc(100vh - var(--header-height));
+    height: calc(100vh - var(--header-heightMobile));
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -45,75 +45,35 @@
 
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 650px) {
     .amplify {
-        display: flex;
-        height: 100vh;
-    }
-    
-    .amplifyContent {
-        width: 800px;
-        display: flex;
-        flex-direction: column;
-        padding: 90px 0px 0 55px;
-    }
-    
-    .amplifyContentTitle {
-        font-style: italic;
-        font-size: 65px;
+        height: calc(100vh - var(--header-heightTablet));
+        flex-direction: column-reverse;
+        justify-content: space-between;
         padding: 0;
-        font-weight: 100;
+        margin: 0;
+        top: 0 ;
     }
-    
-    .amplifyContentTitleBold {
-        font-size: 90px;
-        font-weight: 500;
-    }
-    
-    .amplifyContentText {
-        font-size: 20px;
-        font-size: 40px;
-        margin-top: 114px;
-        width: 687px;
-    }
-    
+
     .amplifyImageContainer {
-        width: 1120px;
+        overflow: hidden;
     }
-    
+
     .amplifyImage {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-@media screen and (min-width: 2500px) {
-    .amplifyContent {
-        min-width: 900px;
-        margin: 185px 0 auto;
-        padding-top: 0;
-    }
-
-    .amplifyImageContainer {
-        width: 100%;
-    }
-
-    .ampplifyImage {
+        height: auto;
         width: 100%;
     }
 
     .amplifyContentTitle {
-        font-size: 75px;
-        font-weight: 800;
+        font-size: 40px;
     }
 
     .amplifyContentTitleBold {
-        font-weight: 800;
+        font-size: 60px;
     }
 
     .amplifyContentText {
-        max-width: 687px;
-        font-size: 50px;
+        font-size: 25px;
     }
+    
 }
