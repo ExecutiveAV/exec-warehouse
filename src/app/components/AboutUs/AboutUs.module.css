@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     background-color: var(--secondary-color);
-    height: calc(100vh - var(--header-heightMobile));
+    height: calc(100dvh - var(--header-heightMobile));
 }
 
 .aboutUsHeader {
@@ -58,46 +58,44 @@
     display: block;
     width: 100%;
 }
-@media screen and (min-width: 2500px) {
+@media screen and (min-width: 600px) {
     .aboutUsHeader {
-        min-height: 178px;
-    }
-    .aboutUsBody {
-        width: 100%;
+        height: calc(100vh - var(--header-heightTablet));
     }
 
-    .aboutUsBodyContent {
-        max-width: 50%;
-        width: 50%;
-        padding: 163px 157px 0;
-    }
-
-    .aboutUsBodyContent > .aboutUsBodyContentText, .aboutUsBodyContentTextBold {
-
-        max-width: 942px;
+    .aboutUsHeader {
+        height: 100px;
     }
 
     .aboutUsHeaderTitle {
-        font-size: 100px;
-    }
-
-    .aboutUsBodyContentText {
         font-size: 40px;
-        font-weight: 800;
     }
 
-    .aboutUsBodyContentTextBold {
-        font-size: 70px;
+    .aboutUsContent {
+        padding: 22px 30px;
     }
 
-    .aboutUsBodyImageContainer {
-
+    .aboutUsContentText {
+        font-size: 20px;
     }
 
-    .aboutUsBodyImage {
+    .aboutUsContentTextBold {
+        font-size: 26px;
+    }
+
+    .aboutUsImageContainer {
+        max-height: 500px;
+        height: 500px;
+    }
+
+    .aboutUsImageM {
+        display: none;
+    }
+
+    .aboutUsImage {
+        display: block;
         width: 100%;
-        min-height: 100%;
+        height: 100%;
         object-fit: cover;
-        
     }
 }

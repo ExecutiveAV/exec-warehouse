@@ -1,6 +1,6 @@
 .elevate {
     width: 100%;
-    height: calc(100vh - var(--header-heightMobile));
+    height: calc(100dvh - var(--header-heightMobile));
     display: flex;
     flex-direction: column;
 }
@@ -62,33 +62,41 @@
 }
 
 
-@media screen and (min-width: 2500px) {
-    .elevateBackgroundImageContainer {
-        min-width: 1187px;
-        min-height: 1123px;
-        margin: auto 72px auto 0;
-        overflow: hidden;
-        position: relative;
+@media screen and (min-width: 600px) {
+    .elevate {
+        height: calc(100vh - var(--header-heightTablet));
     }
 
-    .elevateBackgroundImage {
-        width: 1187px;
-        height: 1123px;
+    .elevateHeader {
+        width: 450px;
+    }
+
+    .elevateHeaderTitle {
+        font-size: 40px;
+        margin: 0;
+        max-width: 450px;
+    }
+
+    .elevateLine {
+        width: 450px;
+        border-left: 450px solid;
+    }
+
+    .elevateImageContainer {
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .elevateContent {
-        width: 1100px;
-        padding-top: 80px;
-        margin: 0 auto;
-    }
-
-    .elevateContentTitle {
-        font-size: 100px;
+        padding: unset;
+        margin-top: 20px;
     }
 
     .elevateContentDescription {
-        font-size: 50px;
-        min-width: 828px;
-        margin-top: 80px;
+        font-size: 26px;
+        max-width: 580px;
     }
+
 }

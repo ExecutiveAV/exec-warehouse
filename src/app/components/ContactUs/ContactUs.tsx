@@ -35,7 +35,7 @@ const ContactUs = () => {
                     <input className={styles.contactUsFormInput} type="email" id="email" name="email" />
                     <label className={styles.contactUsFormLabel} htmlFor="email" >E-mail Address</label>
                     
-                    <label className={`${styles.contactUsFormLabel} ${styles.previousSellerLabel}`} htmlFor="previousSellerContainer" >Are you a previous seller?</label><br />
+                    <label className={`${styles.contactUsFormLabel} ${styles.previousSellerLabel}`} htmlFor="previousSellerContainer" >Are you a previous seller?</label><br className={styles.previousSellerLabelBreak} />
                     <section className={styles.contactUsFormPreviousSellerContainer} >
                         <div className={styles.contactUsFormPreviousSellerInputContainer} >
                             <input className={styles.contactUsFormPreviousSellerInput} type="radio" id="previousSellerYes" name="previousSeller" value="previousSellerYes" />

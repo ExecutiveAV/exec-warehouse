@@ -8,7 +8,7 @@ import craftingBackgroundM from '@/assets/imgs/craftingBackgroundM.png';
 
 const Crafting = () => {
   return (
-    <section className={`${styles.crafting} ${loraFont.className}`}>
+    <section id='crafting' className={`${styles.crafting} ${loraFont.className}` }>
         <header className={styles.craftingHeader}>
             <h2 className={styles.craftingTitle}>Crafting <span className={styles.craftingTitleBold}>CONTENT that</span> Connects</h2>
             <p className={styles.craftingDescription}>
