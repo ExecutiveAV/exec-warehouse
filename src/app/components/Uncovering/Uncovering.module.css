@@ -3,12 +3,13 @@
     width: 100%;
     height: calc(100dvh - var(--header-heightMobile));
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .uncoveringContentTextContainer {
     display: inline-flex;
-    height: 100%;
-    min-height: 100%;
+    flex: 1;
     position: relative;
     min-width: 100%;
     display: flex;
@@ -18,8 +19,8 @@
 
 .uncoveringContentTextContainerBackground {
     display: flex;
-    top: -85px;
     position: absolute;
+    bottom: 85px;
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
